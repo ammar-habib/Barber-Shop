@@ -1,0 +1,168 @@
+@media (max-width: 1199.98px){
+	.profile-detail-row{
+		height: auto;
+	}
+	.card-link{
+		margin-bottom:5px;
+	}
+}
+@media (max-width: 991.98px){
+	
+	.profile-img-div{
+		width:200px;
+		height:200px;
+		top: -60px;
+	}
+	.carousel-item-height {
+		height: auto; 
+	}
+	.card-columns {
+		-webkit-column-count: 3;
+		-moz-column-count: 3;
+		column-count: 3;
+	}
+
+}
+@media (max-width: 767.98px){
+	.card-columns {
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+		column-count: 2;
+	}
+	.profile-img-div{
+		width:150px;
+		height:150px;
+		top: -60px;
+	}
+	.profile-img-row {
+		height: 90px;
+	}
+	.profile-detail-row{
+		margin-bottom:20px;
+	}
+	.portfolio-img-div{
+		width: 230px;
+		height: 150px;
+	}
+	.search-from .form-control {
+		width: 265px;
+	}
+	.top-bar-breadcrumb{
+		margin-top:5px;
+	}
+	.carousel-item-height {
+		height: auto;
+	}
+	.btn-group, .btn-group-vertical {
+		display: -webkit-inline-box;
+		display: -ms-inline-box;
+		display: inline-block; 
+	}
+	.experience-btn{
+		width: 100%;
+	}
+	.testimoial-content .section-heading {
+		margin-bottom: 50px !important;
+	}
+	.d-sm-none{
+		display: none;
+	}
+}
+@media (max-width: 575.98px){
+	.card-columns {
+		-webkit-column-count: 1;
+		-moz-column-count: 1;
+		column-count: 1;
+	}
+	.mb-xs-0{
+		margin-bottom:0px;
+	}
+	.mobile-header-logo{
+		display: block !important;
+	}
+	.navbar-from {
+		display: block;
+		margin-top: 15px;
+	}
+	.navbar-from .form-group{
+		margin-bottom:10px;
+	}
+	.navbar-from .form-control {
+		width: 100%;
+	}
+	.header-top-logo{
+		top: 5px;
+	}
+	.top-bar-breadcrumb{
+		float: none;
+		justify-content: center;
+		right: 0;
+	}
+	.carousel-caption{
+		display: none;
+	}
+	.top-navbar{
+		padding-top: 0px !important;
+	}
+	.mobile-top-navbar{
+		padding: 15px 0px 15px !important;
+		background-color: #000000d1;
+	}
+	.navbar-from{
+		display: block;
+	}
+	.navbar-from .btn{
+		width: 100%;
+	}
+	.credit-card-div{
+		height: 160px;
+	}
+	.credit-card-form{
+		top: 60px;
+	}
+	.credit-card-form .form-group {
+		width: 23%;
+		margin: 0px !important;
+	}
+	.testimoial-section{
+		height:auto;
+	}
+	.d-xs-none{
+		display: none;
+	}
+	.testimoial-content .section-heading {
+		margin-bottom: 30px !important;
+	}
+	.testimoial-section {
+		min-height: 500px;
+	}
+	.footer-logo{
+		margin:0 auto;
+	}
+	.text-xs-center{
+		text-align: center !important;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

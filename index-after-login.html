@@ -1,0 +1,864 @@
+<!doctype html>
+<html>
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<!-- Responsive -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="keywords" content="">
+
+	<title>Landing page</title>
+
+	<!--CSS -->
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/build.css">
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet"> 
+
+	<!-- Add custom CSS here -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+</head>
+<body>
+	<div class="main-wrapper">
+		<header>
+			<nav class="top-navbar pt-4 pb-3">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xl-8 col-lg-6 col-md-6 col-sm-4 col-xs-12 offset-xl-2 offset-lg-3 offset-md-3 offset-sm-4">
+							<div class="header-top-logo text-center">
+								<img src="img/logo.svg" class="img-responsive header-logo">	
+							</div>
+						</div>
+						<div class="col-xl-2 col-lg-3 col-md-3 col-sm-4 col-xs-12 p-0">
+							<ol class="top-bar-breadcrumb breadcrumb breadcrumb mb-0 p-0 mr-sm-2 float-md-right float-sm-right">
+								<!-- Show this li after the login -->
+
+								<li class="breadcrumb-item mt-1 mr-3 ">
+									<span> Welcome <span class="text-primary">Barber Shop</span></span>
+								</li>
+
+								<!-- end li after the login -->
+
+								<li class="list-inline-item border-right pr-3">
+									<a href="#"><i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i></a>
+								</li>
+								<li class="list-inline-item pl-2">
+									<a href="#"><i class="fa fa-search fa-2x"></i></a>
+								</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<div class="header-main-logo d-xs-none">
+				<div class="row m-0">
+					<div class="col-12 text-center">
+						<img src="img/logo.svg" class="img-fluid">
+					</div>
+				</div>
+			</div>
+			<div class="header-main-heeding d-xs-none">
+				<div class="row m-0">
+					<div class="col-xl-4 col-lg-5 col-md-7 col-sm-12 text-lg-right text-md-right text-sm-left">
+						<h1 class="font-weight-bold">
+							Barber Shop in Ealing
+						</h1>
+						<p class="header-sub-heading text-white font-weight-light">looking for barbers for a full time opening</p>
+					</div>
+				</div>
+			</div>
+			<div class="header-form-div d-xs-none">
+				<div class="row m-0">
+					<div class="col-xl-8 col-lg-10 col-md-11 col-sm-11 offset-xl-2 offset-lg-1 offset-md-1 offset-sm-1">
+						<form class="form-inline  search-from">
+							<div class="form-group">
+								<label class="sr-only">Postcode or city</label>
+								<input type="text" class="form-control rounded-bottom mr-sm-2" placeholder="Postcode or city">
+							</div>
+							<div class="form-group">
+								<label class="sr-only">Show all job types</label>
+								<select class="form-control rounded-top mr-sm-4 text-white">
+									<option>Show all job types</option>
+								</select>
+							</div>
+							<button type="submit" class="btn btn-primary btn-long pt-2 pb-2 pl-5 pr-5 mt-xl-0 mt-lg-0 mt-md-3" style="height: 38px;
+							">Search now</button>
+						</form>
+						"&gt;
+					</div>
+				</div>
+			</div>
+			<div class="carousel-section">
+				<div class="color-layer"></div>
+				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item carousel-item-height active">
+							<img class="d-block w-100" src="img/download.svg" alt="First slide">
+							<div class="carousel-caption p-0">
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="tab-section">
+				<div class="container">
+					<ul class="nav nav-tabs custom-navtab nav-justified pt-4 pb-4" id="myTab" role="tablist">
+						<li class="nav-item border-right">
+							<a class="nav-link border-0 custom-nav-link active" id="recommended-tab" data-toggle="tab" href="#recommended" role="tab" aria-controls="recommended" aria-selected="true">Recommended for you<i class="fa fa-bell fa-lg" aria-hidden="true"></i></a>
+						</li>
+						<li class="nav-item border-right">
+							<a class="nav-link border-0 custom-nav-link" id="yourarea-tab" data-toggle="tab" href="#yourarea" role="tab" aria-controls="yourarea" aria-selected="false">In your area<i class="fa fa-map-marker fa-lg" aria-hidden="true"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link border-0 custom-nav-link" id="advertisers-tab" data-toggle="tab" href="#advertisers" role="tab" aria-controls="advertisers" aria-selected="false">Top advertisers<i class="fa fa-user-plus fa-lg" aria-hidden="true"></i></a>
+						</li>
+					</ul>
+					<div class="tab-content" id="myTabContent">
+						<div class="tab-pane fade show active" id="recommended" role="tabpanel" aria-labelledby="recommended-tab">
+							<div class="card-columns">
+								
+								<div class="card">
+									<img src="img/i-stock-640104022.jpg" srcset="img/i-stock-640104022@2x.jpg 2x,
+									img/i-stock-640104022@3x.jpg 3x" class="card-img-top">
+									<div class="card-body">
+										<h6 class="card-title font-weight-bold">Card title</h6>
+										<ul class="card-ul">
+											<li><i class="fa fa-map-marker"></i>13 Mall Raod Lahore</li>
+											<li><i class="fa fa-clock-o" aria-hidden="true"></i>Full Time</li>
+										</ul>
+										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									</div>
+								</div>
+								<div class="card">
+
+									<div class="card-body">
+										<h6 class="card-title font-weight-bold">Card title</h6>
+										<ul class="card-ul">
+											<li><i class="fa fa-map-marker"></i>13 Mall Raod Lahore</li>
+											<li><i class="fa fa-clock-o" aria-hidden="true"></i>Full Time</li>
+										</ul>
+										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									</div>
+								</div>
+								<div class="card">
+
+									<div class="card-body">
+										<h6 class="card-title font-weight-bold">Card title</h6>
+										<ul class="card-ul">
+											<li><i class="fa fa-map-marker"></i>13 Mall Raod Lahore</li>
+											<li><i class="fa fa-clock-o" aria-hidden="true"></i>Full Time</li>
+										</ul>
+										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									</div>
+								</div><div class="card">
+									<img src="img/i-stock-640104022.jpg" srcset="img/i-stock-640104022@2x.jpg 2x,
+									img/i-stock-640104022@3x.jpg 3x" class="card-img-top">
+									
+								</div>
+								<div class="card">
+									<div class="card-body">
+										<h6 class="card-title font-weight-bold">Card title</h6>
+										<ul class="card-ul">
+											<li><i class="fa fa-map-marker"></i>13 Mall Raod Lahore</li>
+											<li><i class="fa fa-clock-o" aria-hidden="true"></i>Full Time</li>
+										</ul>
+										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									</div>
+								</div>
+								<div class="card">
+									<img src="img/i-stock-640104022.jpg" srcset="img/i-stock-640104022@2x.jpg 2x,
+									img/i-stock-640104022@3x.jpg 3x" class="card-img-top">
+									<div class="card-body">
+										<h6 class="card-title font-weight-bold">Card title</h6>
+										<ul class="card-ul">
+											<li><i class="fa fa-map-marker"></i>13 Mall Raod Lahore</li>
+											<li><i class="fa fa-clock-o" aria-hidden="true"></i>Full Time</li>
+										</ul>
+										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									</div>
+								</div>
+								<div class="card" data-toggle="modal" data-target="#advertPostModal">
+									<div class="card-body text-center pt-5 pb-5">
+										<p class="m-0"><i class="fa fa-plus-circle fa-4x"></i></p>
+										<p class="mb-2">New Advert</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="yourarea" role="tabpanel" aria-labelledby="yourarea-tab">
+							<div class="row">
+								<div class="col-sm-lx-3 col-lg-3 col-md-4 col-sm-6 col-xs-12">
+									<div class="card mb-4 show-popup">
+										<img src="img/i-stock-640104022.jpg" srcset="img/i-stock-640104022@2x.jpg 2x,
+										img/i-stock-640104022@3x.jpg 3x" class="card-img-top">
+										<div class="card-body">
+											<h6 class="card-title font-weight-bold">Card title</h6>
+											<ul class="card-ul">
+												<li><i class="fa fa-map-marker"></i>13 Mall Raod Lahore</li>
+												<li><i class="fa fa-clock-o" aria-hidden="true"></i>Full Time</li>
+											</ul>
+											<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="advertisers" role="tabpanel" aria-labelledby="advertisers-tab">
+							<div class="row">
+								<div class="col-sm-lx-3 col-lg-3 col-md-4 col-sm-6 col-xs-12">
+									<div class="card mb-4 show-popup">
+										<img src="img/i-stock-640104022.jpg" srcset="img/i-stock-640104022@2x.jpg 2x,
+										img/i-stock-640104022@3x.jpg 3x" class="card-img-top">
+										<div class="card-body">
+											<h6 class="card-title font-weight-bold">Card title</h6>
+											<ul class="card-ul">
+												<li><i class="fa fa-map-marker"></i>13 Mall Raod Lahore</li>
+												<li><i class="fa fa-clock-o" aria-hidden="true"></i>Full Time</li>
+											</ul>
+											<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Start advert post section -->
+						
+						<div class="modal fade" id="advertPostModal" tabindex="-1" role="dialog" aria-labelledby="advertPostModalLabel" aria-hidden="true">
+							<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+								<div class="modal-content">
+									<div class="modal-body p-0">
+										<div class="commom-section-popup advert-post-popup">
+											<div class="card">
+												<div class="row no-gutters">
+													<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+														<form class="modal-from m-4">
+															<h2 class="font-serief font-weight-bold mb-4 mt-4 text-center">What kind of jobs you are offering?
+															</h2>
+															<div class="form-group mb-3" id="step1">
+																<select class="form-control modal-form-control" style="color:#9b9b9b;">
+																	<option>Select job type</option>
+																</select>
+															</div>
+															<div class="form-group mb-3" id="step2">
+																<input type="text" class="form-control modal-form-control" placeholder="Job location">
+															</div>
+															<div class="form-group mb-3" id="step3">
+																<div class="btn-group select-checks" data-toggle="buttons">
+																	<label class="btn btn-shadow border select-checks-btn mr-3 mb-2" for="btn1">
+																		<span class="d-block mt-2 mb-2">
+																			<img src="img/scissor-icon.png" class="img-fluid white-icon">
+																			<img src="img/scissor-icon-black.png" class="img-fluid black-icon">
+																		</span>
+																		<input type="checkbox" id="btn1" name="myGroup" style="" checked="checked">
+																		Scissor Cuts
+																	</label>
+																	<label class="btn btn-shadow border select-checks-btn mr-3 mb-2" for="btn2">
+																		<span class="d-block mt-2 mb-2">
+																			<img src="img/hot-towel-shave-icon-black.png" class="img-fluid black-icon">
+																			<img src="img/hot-towel-shave-icon.png" class="img-fluid white-icon">
+																		</span>
+																		<input type="checkbox" id="btn2" name="myGroup">Hot Towel Shave
+																	</label>
+																	<label class="btn btn-shadow select-checks-btn border mr-3 mb-2" for="btn3">
+																		<span class="d-block mt-2 mb-2">
+																			<img src="img/beard-styling-icon-black.png" class="img-fluid black-icon">
+																		</span>
+																		<span class="d-block mt-2 mb-2">
+																			<img src="img/beard-styling-icon.png" class="img-fluid white-icon">
+																		</span>
+																		<input type="checkbox" id="btn3" name="myGroup" checked="checked">Beard-Styling
+																	</label>
+
+																	<label class="btn btn-shadow border mr-3 mb-2 select-checks-btn" for="btn3">
+																		<span class="d-block mt-2 mb-2">
+																			<img src="img/ear-singeing-icon-black.png" class="img-fluid black-icon">
+																			<img src="img/ear-singeing-icon.png" class="img-fluid white-icon">
+																		</span>
+																		<input type="checkbox" id="btn3" name="myGroup" checked="checked">Ear Singeing
+																	</label>
+																	<label class="btn btn-shadow border select-checks-btn mr-3 mb-2" for="btn3">
+																		<span class="d-block mt-2 mb-2">
+																			<img src="img/skin-fades-icon.png" class="img-fluid white-icon">
+																			<img src="img/skin-fades-icon-black.png" class="img-fluid black-icon">
+																		</span>
+																		<input type="checkbox" id="btn3" name="myGroup" checked="checked">Skin Fades
+																	</label>
+																	<label class="btn btn-shadow border mr-3 mb-2 select-checks-btn" for="btn3">
+																		<span class="d-block mt-2 mb-2">
+																			<img src="img/waxing-icon.png" class="img-fluid white-icon">
+																		</span>
+																		<span class="d-block mt-2 mb-2">
+																			<img src="img/waxing-icon-black.png" class="img-fluid black-icon">
+																		</span>
+																		<input type="checkbox" id="btn3" name="myGroup" checked="checked">Waxing
+																	</label>
+																	<label class="btn btn-shadow border mr-3 mb-2 select-checks-btn" for="btn3">
+																		<span class="d-block mt-2 mb-2">
+																			<img src="img/threading-icon-black.png" class="img-fluid black-icon">
+																		</span>
+																		<span class="d-block mt-2 mb-2">
+																			<img src="img/threading-icon.png" class="img-fluid white-icon">
+																		</span>
+																		<input type="checkbox" id="btn3" name="myGroup" checked="checked">Threading 
+																	</label>
+																	<label class="btn btn-shadow border select-checks-btn mr-3 mb-2" for="btn3">
+																		<span class="d-block mt-2 mb-2">
+																			<img src="img/afro-carribean-icon-black.png" class="img-fluid black-icon">
+																			<img src="img/afro-carribean-icon.png" class="img-fluid white-icon">
+																		</span>
+																		<input type="checkbox" id="btn3" name="myGroup" checked="checked">Afro Carribean 
+																	</label>
+																</div>
+															</div>
+															<div class="form-group mb-3" id="step4">
+																<select class="form-control modal-form-control">
+																	<option>Select Language</option>
+																</select>
+															</div>
+															<div class="form-group mb-4 text-center" id="step5">
+																<div class="btn-group select-checks " data-toggle="buttons">
+																	<label class="btn btn-shadow border mr-5 mb-2 experience-btn" for="entry-level">
+																		<input type="radio" id="entry-level" style="" checked="checked">
+																		<span>Entry level(0-2 years)</span>
+																	</label>
+																	<label class="btn btn-shadow border mr-5 mb-2 experience-btn" for="mid-weight">
+																		<input type="radio" id="mid-weight">
+																		<span>Mid-Weight (2-5 years)</span>
+																	</label>
+																	<label class="btn btn-shadow border  mb-2 experience-btn" for="senior">
+																		<input type="radio" id="senior">
+																		<span>Senior (5+ years)</span>
+																	</label>
+																</div>
+															</div>
+															<div class="form-group mb-2 text-center" id="step6">
+																<div class="btn-group select-checks" data-toggle="buttons">
+																	<label class="btn btn-shadow border select-checks-btn mr-4 mb-2" for="male">
+																		<span class="d-block mt-3 mb-3">
+																			<img src="img/male.png" class="img-fluid white-icon">
+																			<img src="img/male-black.png" class="img-fluid black-icon">
+																		</span>
+																		<input type="radio" id="male" name="myGroup" style="" checked="checked"> Male
+																	</label>
+																	<label class="btn btn-shadow border select-checks-btn mr-4 mb-2" for="female">
+																		<span class="d-block mt-3 mb-3">
+																			<img src="img/female.png" class="img-fluid white-icon">
+																			<img src="img/female-black.png" class="img-fluid black-icon">
+																		</span>
+																		<input type="radio" id="female" name="myGroup"> Female
+																	</label>
+																</div>
+															</div>
+															<div class="form-group mb-2" id="step7">
+																<input type="text" class="form-control modal-form-control" placeholder="Add a title to your advert">
+															</div>
+															<div class="form-group mb-2" id="step8">
+																<textarea class="form-control modal-form-control" placeholder="Advert details" style="height: 300px;"></textarea>
+															</div>
+															<div class="form-group mb-2" id="step9">
+																<label class="upload-btn d-block form-control modal-form-control">
+																	<input type="file" required="">
+																	<span class="d-block mb-1 pull-right">
+																		<i class="fa fa-plus-circle fa-lg"></i>
+																	</span>
+																	<span class="d-block" style="color:#9b9b9b;">Upload your image</span>
+																</label>
+															</div>
+															<div class="form-group mb-2">
+																<a href="#" class="btn btn-primary modal-link-btn pt-2 pb-2 text-white w-auto" id="advert-form-steps">Next</a>
+															</div>
+															<div class="form-group mb-2" id="advert-perview-btn-div">
+																<a href="#" class="btn btn-primary modal-link-btn pt-2 pb-2 text-white w-auto" data-dismiss="modal" data-toggle="modal" data-target="#advertPerviewModal">Preview my advert</a>
+															</div>
+														</form>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- End advert post section -->
+
+						<!-- Start advert perview section -->
+
+						<div class="modal fade" id="advertPerviewModal" tabindex="-1" role="dialog" aria-labelledby="advertPerviewModalLabel" aria-hidden="true">
+							<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+								<div class="modal-content">
+									<div class="modal-body p-0">
+										<div class="commom-section-popup advert-section-popup active">
+											<div class="card pop-card">
+												<div class="row no-gutters">
+													<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 border-right">
+														<div class="popup-left-side">
+															<div class="card-img-div" id="advert-perview-div" style="display: none;">
+																<img src="img/i-stock-640104022.jpg" srcset="img/i-stock-640104022@2x.jpg 2x,
+																img/i-stock-640104022@3x.jpg 3x" class="card-img-top">
+															</div>
+															<div class="modal-upload-div w-50  pt-5 pb-5 mt-5 mb-5 ml-auto mr-auto text-center" id="advert-upload-div">
+																<label class="upload-div text-center">
+																	<input type="file" required="">
+																	<span class="d-block mb-1">
+																		<i class="fa fa-plus-square fa-lg"></i>
+																	</span>
+																	<span class="d-inline-block font-size-small" style="color:#B1B1B1;">Uplod picture (optional)
+																	</span>
+																</label>
+															</div>
+															<div class="card-body">
+																<h6 class="card-title font-weight-bold">About the Advertiser
+																</h6>
+																<div class="card-body-upper mb-5">
+																	<p class="card-text mb-0">Some quick example text to build on the card title and make up the bulk of the card's content.
+																	</p>
+																</div>
+																<div class="some-insights mb-5">
+																	<h6 class="card-title font-weight-bold mb-2">Some insights
+																	</h6>
+																	<p class="card-text m-0">
+																		<span class="text-dark font-weight-bold">Number since:</span>
+																		<span class="float-right">April 2018</span>
+																	</p>
+																	<p class="card-text">
+																		<span class="text-dark font-weight-bold">Ads Post:
+																		</span>
+																		<span class="float-right">5</span>
+																	</p>
+																</div>
+																<div class="advert-cost-div text-center" id="advert-cost-div" style="display: none;">
+																	<span class="font-size-small">Advert Cost</span>
+																	<p class="advert-cost-text"><span>$</span><span>10.99</span></p>
+																</div>
+																<div id="edit-advert-btn-div">
+																	<a href="#advertPostModal" data-dismiss="modal" data-toggle="modal"  class="btn btn-primary btn-block pt-3 pb-3
+																	">Edit advert</a>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-xl-5 col-lg-5 col-md-5 col-sm-6">
+														<div class="popup-right-side">
+															<div class="card-body p-0 m-4">
+																<h6 class="card-title font-weight-bold">Full time barber opening avaliable</h6>
+																<ul class="card-ul">
+																	<li><i class="fa fa-map-marker"></i>13 Mall Raod Lahore</li>
+																	<li><i class="fa fa-clock-o" aria-hidden="true"></i>Full Time</li>
+																</ul>
+																<ul class="card-ul">
+																	<li>Experience barber required</li>
+																	<li>Experience barber required</li>
+																</ul>
+																<ul class="card-ul">
+																	<li>Experience barber required</li>
+																	<li>Experience barber required</li>
+																</ul>
+																<div class="border-bottom border-top pt-2 pb-2">
+																	<p class="card-text m-0">
+																		<span class="text-dark font-weight-bold">Number since:</span>
+																		<span>April 2018</span>
+																	</p>
+																	<p class="card-text">
+																		<span class="text-dark font-weight-bold">Ads Post:</span>
+																		<span>5</span>
+																	</p>
+																</div>
+																<div class="footer pt-3 pb-3">
+																	<a href="#" class="btn text-primary font-weight-bold" data-toggle="collapse" data-target="#ShowPaymentDiv">Proceed to post my advert</a>
+																	<ul class="list-inline float-right m-0" id="advert-share-fvrt-ul">
+																		<li class="list-inline-item"><a href="#"><i class="fa fa-star fa-lg"></i></a></li>
+																		<li class="list-inline-item"><a href="#"><i class="fa fa-share-alt fa-lg"></i></a></li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+														<div class="payment-method-div collapse" id="ShowPaymentDiv">
+															<div class="card-body p-0 m-4">
+																<h6 class="card-title font-weight-bold">Fill in credit card</h6>
+																<div class="credit-card-div bg-dark mb-5">
+																	<form class="form-inline credit-card-form">
+																		<div class="form-group mb-2">
+																			<input type="text" class="form-control" placeholder="0000">
+																		</div>
+																		<div class="form-group mb-2">
+																			<input type="text" class="form-control" placeholder="0000">
+																		</div>
+																		<div class="form-group mb-2">
+																			<input type="text" class="form-control" placeholder="0000">
+																		</div>
+																		<div class="form-group mb-2">
+																			<input type="text" class="form-control" placeholder="0000">
+																		</div>
+																		
+																		<div class="form-group mb-2 card-holder-input">
+																			<label>Card Holder</label>
+																			<input type="text" class="form-control pt-1 pb-1" placeholder="NAME">
+																		</div><div class="form-group mb-2 card-holder-input">
+																			<label>CVS Number</label>
+																			<input type="text" class="form-control pt-1 pb-1" placeholder="NUMBER">
+																		</div>
+																		<div class="form-group mb-2 card-expir-input">
+																			<label>Expires</label>
+																			<input type="text" class="form-control pt-1 pb-1" placeholder="DAY/MONTH">
+																		</div>
+																		<div class="clearfix"></div>
+																	</form>
+																</div>
+																<div class="form-group mb-5">
+																	<select class="form-control modal-form-control">
+																		<option>Post my add for 7 Days</option>
+																	</select>
+																</div>
+																<div class="form-group mb-4 border-bottom">
+																	<button type="button" class="btn btn-primary btn-block"  id="showAdvertPostSuccessModal">Pay Now and post advert</button>
+																</div>
+																<div class="form-group mb-2 text-center">
+																	<p>or select other payment mehtod</p>
+																</div>
+																<div class="form-group mb-2 border-top">
+																	<button class="btn btn-block bg-white">
+																		<span class="mr-2 paypal-text">Pay with</span>
+																		<img src="img/paypal-icon.png" class="img-responsive d-inline-block paypal-icon">
+																	</button>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- End advert perview section -->
+
+						<!-- start advert Success Modal section -->
+
+						<div class="modal fade" id="advertPostSuccessModal" tabindex="-1" role="dialog" aria-labelledby="advertPostSuccessModalLabel" aria-hidden="true">
+							<div class="modal-dialog modal-md modal-dialog-centered" role="document"  style="max-width: 800px;">
+								<div class="modal-content" style="background:transparent;">
+									<div class="modal-body text-center pr-5 pl-5 bg-white rounded">
+										<div class="commom-section-popup">
+											<h2 class="font-serief font-weight-bold mb-4 mt-4">Congratulstions on posting your advert!</h2>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+											</p>
+											<div class="row justify-content-center mb-2">
+												<div class="col-xl-5 col-lg-5 col-md-6 col-sm-6 col-xs-12 p-1">
+													<div class="card pop-card" id="ShowadvertUpgradeModal">
+														<div class="card-img-div">
+															<img class="card-img-top" src="img/download.svg" alt="Card image cap">
+														</div>
+														<div class="card-body text-left">
+															<h6 class="card-title  font-weight-bold">About the Advertiser
+															</h6>
+															<div class="card-body-upper mb-2">
+																<p class="card-text mb-0">Some quick example text to build on the card title and make up the bulk of the card's content.
+																</p>
+															</div>
+															<div class="advert-cost-div text-center">
+																<span class="font-size-small font-weight-bold">Advert Cost</span>
+																<p class="advert-cost-text mb-0">
+																	<span>$</span>
+																	<span>10.99</span>
+																	<span class="mr-2 ml-2">/</span>
+																	<span>day</span>
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-xl-5 col-lg-5 col-md-6 col-sm-6 col-xs-12 p-1">
+													<div class="card pop-card">
+														<div class="card-img-div">
+															<img class="card-img-top" src="img/download.svg" alt="Card image cap">
+														</div>
+														<div class="card-body card-body text-left">
+															<h6 class="card-title font-weight-bold">About the Advertiser
+															</h6>
+															<div class="card-body-upper mb-2">
+																<p class="card-text mb-0">Some quick example text to build on the card title and make up the bulk of the card's content.
+																</p>
+															</div>
+															<div class="advert-cost-div text-center">
+																<span class="font-size-small font-weight-bold">Advert Cost</span>
+																<p class="advert-cost-text mb-0"><span>$</span>
+																	<span>10.99</span>
+																	<span class="mr-2 ml-2">/</span>
+																	<span>day</span>
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="modal-footer justify-content-center mt-2 p-1 bg-white ">
+										<a class="btn text-primary font-weight-bold" href="#" data-dismiss="modal">I do not want to upgrade my advert for now </a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- End advert Success Modal section -->
+
+						<!-- Start Upgrade advert Modal -->
+						<div class="modal fade" id="advertUpgradeModal" tabindex="-1" role="dialog" aria-labelledby="advertUpgradeModalLabel" aria-hidden="true">
+							<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+								<div class="modal-content">
+									<div class="modal-body p-0">
+										<div class="commom-section-popup advert-section-popup">
+											<div class="card pop-card">
+												<div class="row no-gutters">
+													<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 border-right">
+														<div class="popup-left-side">
+															<div class="card-img-div">
+																<img class="card-img-top" src="img/download.svg" alt="Card image cap">
+															</div>
+
+															<div class="card-body">
+																<h6 class="card-title font-weight-bold">About the Advertiser
+																</h6>
+																<div class="card-body-upper mb-5">
+																	<p class="card-text mb-0">Some quick example text to build on the card title and make up the bulk of the card's content.
+																	</p>
+																</div>
+																<div class="form-group mb-5">
+																	<select type="text" class="form-control modal-form-control">
+																		<option>Upgrade duration (days)</option>
+																	</select>
+																</div>
+																<div class="advert-cost-div text-center">
+																	<span class="font-size-small">Upgrade Cost</span>
+																	<p class="advert-cost-text"><span>$</span><span>10.99</span></p>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-xl-5 col-lg-5 col-md-5 col-sm-6">
+														<div class="popup-right-side">
+															<div class="card-body p-0 m-4">
+																<h6 class="card-title font-weight-bold">Full time barber opening avaliable</h6>
+																<ul class="card-ul">
+																	<li><i class="fa fa-map-marker"></i>13 Mall Raod Lahore</li>
+																	<li><i class="fa fa-clock-o" aria-hidden="true"></i>Full Time</li>
+																</ul>
+																<ul class="card-ul">
+																	<li>Experience barber required</li>
+																	<li>Experience barber required</li>
+																</ul>
+																<ul class="card-ul">
+																	<li>Experience barber required</li>
+																	<li>Experience barber required</li>
+																</ul>
+																<div class="border-bottom border-top pt-2 pb-2">
+																	<p class="card-text m-0">
+																		<span class="text-dark font-weight-bold">Number since:</span>
+																		<span>April 2018</span>
+																	</p>
+																	<p class="card-text">
+																		<span class="text-dark font-weight-bold">Ads Post:</span>
+																		<span>5</span>
+																	</p>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+														<div class="payment-method-div" >
+															<div class="card-body p-0 m-4">
+																<h2 class="payment-big-heading">Payments</h2>
+																<h6 class="card-title font-weight-normal payment-sub-heading">Fill in credit card</h6>
+																<div class="credit-card-div bg-dark mb-5">
+																	<form class="form-inline credit-card-form">
+																		<div class="form-group mb-2">
+																			<input type="text" class="form-control" placeholder="0000">
+																		</div>
+																		<div class="form-group mb-2">
+																			<input type="text" class="form-control" placeholder="0000">
+																		</div>
+																		<div class="form-group mb-2">
+																			<input type="text" class="form-control" placeholder="0000">
+																		</div>
+																		<div class="form-group mb-2">
+																			<input type="text" class="form-control" placeholder="0000">
+																		</div>
+																		<div class="form-group mb-2 card-holder-input">
+																			<label>Card Holder</label>
+																			<input type="text" class="form-control pt-1 pb-1" placeholder="NAME">
+																		</div>
+																		<div class="form-group mb-2 card-expir-input">
+																			<label>Expires</label>
+																			<input type="text" class="form-control pt-1 pb-1" placeholder="DAY/MONTH">
+																		</div>
+																	</form>
+																</div>
+																<div class="form-group mb-4 border-bottom">
+																	<button type="button" class="btn btn-primary btn-block rounded">Pay Now and upgrade advert</button>
+																</div>
+																<div class="form-group mb-2 text-center">
+																	<p>or select other payment mehtod</p>
+																</div>
+																<div class="form-group mb-2 border-top">
+																	<button class="btn btn-block bg-white">
+																		<span class="mr-2 paypal-text">Pay with</span>
+																		<img src="img/paypal-icon.png" class="img-responsive d-inline-block paypal-icon">
+																	</button>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End upgrade advert modal -->
+
+					</div>
+					<nav aria-label="Page navigation example">
+						<ul class="pagination justify-content-center mt-4 mb-5">
+							<li class="page-item">
+								<a class="page-link" href="#" aria-label="Previous">
+									<span aria-hidden="true"><i class="fa fa-caret-left" aria-hidden="true"></i></span>
+									<span class="sr-only">Previous</span>
+								</a>
+							</li>
+							<li class="page-item active"><a class="page-link" href="#">1</a></li>
+							<li class="page-item"><a class="page-link" href="#">2</a></li>
+							<li class="page-item"><a class="page-link" href="#">3</a></li>
+							<li class="page-item">
+								<a class="page-link" href="#" aria-label="Next">
+									<span aria-hidden="true"><i class="fa fa-caret-right" aria-hidden="true"></i></span>
+									<span class="sr-only">Next</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+			<section class="bg-dark text-white why-should-section">
+				<div class="container">
+					<h2 class="why-should-heading mb-5 font-weight-bold">Why Should you Advertise With us?</h2>
+					<div class="row">
+						<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+							<div class="content-div">
+								<div class="icon-div text-center">
+
+									<img src="img/card-red-icon.svg" class="img-responsive">
+								</div>
+								<div class="content-heading-div text-center mb-4">
+									<h3>Lorem ipsum dolor sit amet,</h3>    
+								</div>
+								<div class="content-body mb-5">
+									<p class="text-white font-weight-light font-weight-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis</p>
+									<p class="text-white font-weight-light font-weight-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+							<div class="content-div">
+								<div class="icon-div text-center">
+
+									<img src="img/thumb-red-icon.svg" class="img-responsive">
+								</div>
+								<div class="content-heading-div text-center  mb-4">
+									<h3>Lorem ipsum dolor sit amet,</h3>    
+								</div>
+								<div class="content-body mb-5">
+									<p class="text-white font-weight-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis</p>
+									<p class="text-white font-weight-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+							<div class="content-div">
+								<div class="icon-div text-center">
+
+									<img src="img/terget-red-icon.svg" class="img-responsive">
+								</div>
+								<div class="content-heading-div text-center  mb-4">
+									<h3>Lorem ipsum dolor sit amet,</h3>    
+								</div>
+								<div class="content-body mb-5">
+									<p class="text-white font-weight-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis</p>
+									<p class="text-white font-weight-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 text-center offset-xl-4 offset-lg-4 offset-md-4">
+							<button class="btn btn-primary btn-block rounded-top rounded-bottom btn-shadow pt-2 pb-2">Find the right plan for you</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="white-divider"></section>
+
+
+		</main>
+		<footer class="bg-dark text-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-6 col-lg-6 col-md-6 col-sm-4 col-xs-12">
+						<div class="footer-logo text-xs-center">
+							<a href="#">
+								<img src="img/logo-footer.svg" class="img-fluid">
+							</a>
+						</div>
+					</div>
+					<div class="col-xl-6 col-lg-6 col-md-6 col-sm-8 col-xs-12">
+						<p class="mb-0 mt-3 text-right text-xs-center">Copyright 2017 The Barber Portal.All rights reserved</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>

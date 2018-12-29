@@ -1,0 +1,642 @@
+<!doctype html>
+<html>
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+
+    <title>Landing page</title>
+
+    <!--CSS -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/build.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet"> 
+
+    <!-- Add custom CSS here -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+</head>
+<body>
+    <div class="main-wrapper">
+        <header>
+            <nav class="top-navbar pt-4 pb-4">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-8 col-lg-6 col-md-6 col-sm-4 col-xs-12 offset-xl-2 offset-lg-3 offset-md-3 offset-sm-4 mobile-header-logo" style="display: none;">
+                            <div class="header-top-logo text-center">
+                                <img src="img/logo.svg" class="img-responsive header-logo"> 
+                            </div>
+                        </div>
+                        <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-xs-12 offset-xl-2">
+                            <form class="form-inline justify-content-center navbar-from" style="display: none;">
+                                <div class="form-group">
+                                    <label class="sr-only">E-mail</label>
+                                    <input type="text" class="form-control rounded-bottom mb-lg-2 mb-md-2 mr-sm-2 pt-2 pb-2" placeholder="E-mail">
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only">password</label>
+                                    <input type="password" class="form-control rounded-top mb-lg-2 mb-md-2 mr-sm-2 pt-2 pb-2" placeholder="password">
+                                </div>
+                                <div class="form-group">
+                                    <a href="index-after-login.html" class="btn btn-primary btn-md btn-shadow mr-lg-2 mt-lg-0 mt-md-0 ml-md-2 mr-sm-2 pr-5 pl-5 pt-2 pb-2 bg-dark mb-lg-2 mb-md-2 mt-sm-2 mb-xs-0">Log in</a>
+                                </div>
+                                <div class="form-group">
+                                    <a href="#" class="btn btn-primary  btn-md btn-shadow pr-5 pl-5 pt-2 pb-2 mb-lg-2 mb-md-2 mb-xs-0 mb-md-2 mt-xl-0 mt-lg-0 mt-md-0 mt-sm-2" data-toggle="modal" data-target="#signupModal">Register</a>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-xl-2 col-lg-12 col-md-12 col-sm-12 col-xs-12 p-0">
+                            <ol class="top-bar-breadcrumb breadcrumb breadcrumb mb-0 p-0 mr-sm-2 pull-right">
+                                <li class="breadcrumb-item mt-1">
+                                    <a href="#" id="showLoginFrom">Log in</a>
+                                </li>
+                                <li class="breadcrumb-item mt-1 mr-3">
+                                    <a id="showLoginUserPRofile" href="#" data-toggle="modal" data-target="#signupModal">Register</a>
+                                </li>
+                                <li class="list-inline-item border-right pr-3">
+                                    <a href="#"><i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i></a>
+                                </li>
+                                <li class="list-inline-item pl-2">
+                                    <a href="#" id="showSearchDiv"><i class="fa fa-search fa-2x"></i></a>
+                                </li>
+                            </ol>
+                        </div>
+
+                    </div>
+                    <div class="row justify-content-end mt-4 top-nav-search" style="display: none;">
+                        <div class="col-lg-3 ">
+                            <div class="form-group mb-0">
+                                <label class="sr-only">Search</label>
+                                <input type="text" class="form-control rounded mr-sm-2" placeholder="Search">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="header-main-logo d-xs-none">
+                <div class="row m-0">
+                    <div class="col-12 text-center">
+                        <img src="img/logo.svg" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="header-main-heeding d-xs-none">
+                <div class="row m-0">
+                    <div class="col-xl-4 col-lg-5 col-md-7 col-sm-12 text-lg-right text-md-right text-sm-left">
+                        <h1 class="font-weight-bold">
+                            Barber Shop in Ealing
+                        </h1>
+                        <p class="header-sub-heading text-white font-weight-light">looking for barbers for a full time opening</p>
+                    </div>
+                </div>
+            </div> -->
+            <div class="header-form-div d-xs-none">
+                <div class="row m-0">
+                    <div class="col-xl-8 col-lg-10 col-md-11 col-sm-12 offset-xl-2 offset-lg-1 offset-md-1">
+                        <form class="form-inline  search-from">
+                            <div class="form-group">
+                                <label class="sr-only">Postcode or city</label>
+                                <input type="text" class="form-control rounded-bottom mr-sm-2" placeholder="Postcode or city">
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only">Show all job types</label>
+                                <select class="form-control rounded-top mr-sm-4 text-white">
+                                    <option>Show all job types</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-long pt-2 pb-2 pl-5 pr-5 mt-xl-0 mt-lg-0 mt-md-3" style="height: 38px;
+                            ">Search now</button>
+                        </form>
+                        "&gt;
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-section">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item carousel-item-height active">
+                            <div class="color-layer"></div>
+                            <img class="d-block w-100" src="img/download.svg" alt="First slide">
+                            <div class="carousel-caption p-0">
+                               <div class="row ">
+                                <div class="col-lg-6 border-right">
+                                    <h1 class="font-weight-bold">
+                                        Barber Shop in Ealing
+                                    </h1>
+                                    <p class="header-sub-heading text-white font-weight-light">looking for barbers for a full time opening</p>
+                                </div>
+
+                                <div class="col-lg-6  align-self-center">
+                                    <div class="">
+                                        <a href="#" class="view-detail-btn"> View Details  <i class="fa fa-plus-circle fa-lg ml-4"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="tab-section">
+            <div class="container">
+                <ul class="nav nav-tabs custom-navtab nav-justified pt-4 pb-4" id="myTab" role="tablist">
+                    <li class="nav-item border-right">
+                        <a class="nav-link border-0 custom-nav-link active" id="recommended-tab" data-toggle="tab" href="#recommended" role="tab" aria-controls="recommended" aria-selected="true">Recommended for you<i class="fa fa-bell fa-lg" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="nav-item border-right">
+                        <a class="nav-link border-0 custom-nav-link" id="yourarea-tab" data-toggle="tab" href="#yourarea" role="tab" aria-controls="yourarea" aria-selected="false">In your area<i class="fa fa-map-marker fa-lg" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link border-0 custom-nav-link" id="advertisers-tab" data-toggle="tab" href="#advertisers" role="tab" aria-controls="advertisers" aria-selected="false">Top advertisers<i class="fa fa-user-plus fa-lg" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="recommended" role="tabpanel" aria-labelledby="recommended-tab">
+                        <div class="card-columns">
+                            <div class="card"  data-toggle="modal" data-target="#advertdetailModal">
+                                <img src="img/i-stock-640104022.jpg" srcset="img/i-stock-640104022@2x.jpg 2x,
+                                img/i-stock-640104022@3x.jpg 3x" class="card-img-top">
+                                <div class="card-body">
+                                    <h6 class="card-title font-weight-bold">Card title</h6>
+                                    <ul class="card-ul">
+                                        <li><i class="fa fa-map-marker"></i>13 Mall Raod Lahore</li>
+                                        <li><i class="fa fa-clock-o" aria-hidden="true"></i>Full Time</li>
+                                    </ul>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                            <div class="card">
+
+                                <div class="card-body">
+                                    <h6 class="card-title font-weight-bold">Card title</h6>
+                                    <ul class="card-ul">
+                                        <li><i class="fa fa-map-marker"></i>13 Mall Raod Lahore</li>
+                                        <li><i class="fa fa-clock-o" aria-hidden="true"></i>Full Time</li>
+                                    </ul>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                            <div class="card">
+
+                                <div class="card-body">
+                                    <h6 class="card-title font-weight-bold">Card title</h6>
+                                    <ul class="card-ul">
+                                        <li><i class="fa fa-map-marker"></i>13 Mall Raod Lahore</li>
+                                        <li><i class="fa fa-clock-o" aria-hidden="true"></i>Full Time</li>
+                                    </ul>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div><div class="card">
+                                <img src="img/i-stock-640104022.jpg" srcset="img/i-stock-640104022@2x.jpg 2x,
+                                img/i-stock-640104022@3x.jpg 3x" class="card-img-top">
+                                <div class="card-body">
+                                    <h6 class="card-title font-weight-bold">Card title</h6>
+                                    <ul class="card-ul">
+                                        <li><i class="fa fa-map-marker"></i>13 Mall Raod Lahore</li>
+                                        <li><i class="fa fa-clock-o" aria-hidden="true"></i>Full Time</li>
+                                    </ul>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h6 class="card-title font-weight-bold">Card title</h6>
+                                    <ul class="card-ul">
+                                        <li><i class="fa fa-map-marker"></i>13 Mall Raod Lahore</li>
+                                        <li><i class="fa fa-clock-o" aria-hidden="true"></i>Full Time</li>
+                                    </ul>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="img/i-stock-640104022.jpg" srcset="img/i-stock-640104022@2x.jpg 2x,
+                                img/i-stock-640104022@3x.jpg 3x" class="card-img-top">
+                                <div class="card-body">
+                                    <h6 class="card-title font-weight-bold">Card title</h6>
+                                    <ul class="card-ul">
+                                        <li><i class="fa fa-map-marker"></i>13 Mall Raod Lahore</li>
+                                        <li><i class="fa fa-clock-o" aria-hidden="true"></i>Full Time</li>
+                                    </ul>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="tab-pane fade" id="yourarea" role="tabpanel" aria-labelledby="yourarea-tab">
+                        <div class="form-group mb-4">
+                            <select class="form-control modal-form-control">
+                                <option>Select Area / Country</option>
+                            </select>
+                        </div>
+                        <div class="card-columns">
+                            <div class="card">
+                                <img src="img/i-stock-640104022.jpg" srcset="img/i-stock-640104022@2x.jpg 2x,
+                                img/i-stock-640104022@3x.jpg 3x" class="card-img-top">
+                                <div class="card-body">
+                                    <h6 class="card-title font-weight-bold">Card title</h6>
+                                    <ul class="card-ul">
+                                        <li><i class="fa fa-map-marker"></i>13 Mall Raod Lahore</li>
+                                        <li><i class="fa fa-clock-o" aria-hidden="true"></i>Full Time</li>
+                                    </ul>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                            <div class="card">
+
+                                <div class="card-body">
+                                    <h6 class="card-title font-weight-bold">Card title</h6>
+                                    <ul class="card-ul">
+                                        <li><i class="fa fa-map-marker"></i>13 Mall Raod Lahore</li>
+                                        <li><i class="fa fa-clock-o" aria-hidden="true"></i>Full Time</li>
+                                    </ul>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                            <div class="card">
+
+                                <div class="card-body">
+                                    <h6 class="card-title font-weight-bold">Card title</h6>
+                                    <ul class="card-ul">
+                                        <li><i class="fa fa-map-marker"></i>13 Mall Raod Lahore</li>
+                                        <li><i class="fa fa-clock-o" aria-hidden="true"></i>Full Time</li>
+                                    </ul>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div><div class="card">
+                                <img src="img/i-stock-640104022.jpg" srcset="img/i-stock-640104022@2x.jpg 2x,
+                                img/i-stock-640104022@3x.jpg 3x" class="card-img-top">
+                                <div class="card-body">
+                                    <h6 class="card-title font-weight-bold">Card title</h6>
+                                    <ul class="card-ul">
+                                        <li><i class="fa fa-map-marker"></i>13 Mall Raod Lahore</li>
+                                        <li><i class="fa fa-clock-o" aria-hidden="true"></i>Full Time</li>
+                                    </ul>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h6 class="card-title font-weight-bold">Card title</h6>
+                                    <ul class="card-ul">
+                                        <li><i class="fa fa-map-marker"></i>13 Mall Raod Lahore</li>
+                                        <li><i class="fa fa-clock-o" aria-hidden="true"></i>Full Time</li>
+                                    </ul>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="img/i-stock-640104022.jpg" srcset="img/i-stock-640104022@2x.jpg 2x,
+                                img/i-stock-640104022@3x.jpg 3x" class="card-img-top">
+                                <div class="card-body">
+                                    <h6 class="card-title font-weight-bold">Card title</h6>
+                                    <ul class="card-ul">
+                                        <li><i class="fa fa-map-marker"></i>13 Mall Raod Lahore</li>
+                                        <li><i class="fa fa-clock-o" aria-hidden="true"></i>Full Time</li>
+                                    </ul>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="advertisers" role="tabpanel" aria-labelledby="advertisers-tab">
+                        <div class="row">
+                            <div class="col-sm-lx-3 col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                <div class="card mb-4">
+                                    <img src="img/i-stock-640104022.jpg" srcset="img/i-stock-640104022@2x.jpg 2x,
+                                    img/i-stock-640104022@3x.jpg 3x" class="card-img-top">
+                                    <!-- <img class="card-img-top" src="img/download.svg" alt="Card image cap"> -->
+                                    <div class="card-body">
+                                        <h6 class="card-title font-weight-bold">Card title</h6>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Select advert detail modal section -->
+                    <div class="modal fade" id="advertdetailModal" tabindex="-1" role="dialog" aria-labelledby="advertUpgradeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body p-0">
+                                    <div class="commom-section-popup advert-section-popup active">
+                                        <div class="card pop-card">
+                                            <div class="row no-gutters">
+                                                <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 border-right">
+                                                    <div class="popup-left-side">
+                                                        <div class="card-img-div">
+                                                            <img src="img/i-stock-640104022.jpg" srcset="img/i-stock-640104022@2x.jpg 2x,
+                                                            img/i-stock-640104022@3x.jpg 3x" class="card-img-top">
+                                                            <!-- <img class="card-img-top" src="img/download.svg" alt="Card image cap"> -->
+                                                        </div> 
+                                                        <div class="card-body">
+                                                            <h6 class="card-title font-weight-bold">About the Advertiser</h6>
+                                                            <div class="card-body-upper mb-5">
+                                                                <p class="card-text mb-0">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                            </div>
+                                                            <div class="some-insights mb-5">
+                                                                <h6 class="card-title font-weight-bold mb-2">Some insights</h6>
+                                                                <p class="card-text m-0">
+                                                                    <span class="text-dark font-weight-bold">Number since:</span>
+                                                                    <span class="float-right">April 2018</span>
+                                                                </p>
+                                                                <p class="card-text">
+                                                                    <span class="text-dark font-weight-bold">Ads Post:</span>
+                                                                    <span class="float-right">5</span>
+                                                                </p>
+                                                            </div>
+                                                            <a href="profile.html" class="btn btn-primary btn-block pt-3 pb-3">View profile</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 collapse" id="ShowapplyDiv" class="">
+                                                    <form class="modal-from m-4">
+                                                        <p class="text-primary font-weight-bold">Apply now</p>
+                                                        <div class="form-group mb-2">
+                                                            <input type="text" class="form-control modal-form-control" placeholder="full name">
+                                                        </div>
+                                                        <div class="form-group mb-2">
+                                                            <input type="text" class="form-control modal-form-control" placeholder="phone number">
+                                                        </div>
+                                                        <div class="form-group mb-2">
+                                                            <input type="email" class="form-control modal-form-control" placeholder="e-mail">
+                                                        </div>
+                                                        <div class="form-group mb-2">
+                                                            <label class="upload-btn d-block form-control modal-form-control">
+                                                                <input type="file" required="">
+                                                                <span class="d-block mb-1 pull-right">
+                                                                    <i class="fa fa-plus-circle fa-lg"></i>
+                                                                </span>
+                                                                <span class="d-block" style="color:#9b9b9b;">Upload your CV (.doc or .pdf)</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-group mb-2">
+                                                            <textarea class="form-control modal-form-control" placeholder="cover letter(optional)"></textarea>
+                                                        </div>
+                                                        <div class="form-group mb-2">
+                                                            <button type="submit" class="btn btn-primary btn-block pt-3 pb-3">Submit</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                                                    <div class="popup-right-side">
+                                                        <div class="card-body p-0 m-4">
+                                                            <h6 class="card-title font-weight-bold">Full time barber opening avaliable</h6>
+                                                            <ul class="card-ul">
+                                                                <li><i class="fa fa-map-marker"></i>13 Mall Raod Lahore</li>
+                                                                <li><i class="fa fa-clock-o" aria-hidden="true"></i>Full Time</li>
+                                                            </ul>
+                                                            <ul class="card-ul">
+                                                                <li>Experience barber required</li>
+                                                                <li>Experience barber required</li>
+                                                            </ul>
+                                                            <ul class="card-ul">
+                                                                <li>Experience barber required</li>
+                                                                <li>Experience barber required</li>
+                                                            </ul>
+                                                            <div class="border-bottom border-top pt-2 pb-2">
+                                                                <p class="card-text m-0">
+                                                                    <span class="text-dark font-weight-bold">Number since:</span>
+                                                                    <span>April 2018</span>
+                                                                </p>
+                                                                <p class="card-text">
+                                                                    <span class="text-dark font-weight-bold">Ads Post:</span>
+                                                                    <span>5</span>
+                                                                </p>
+                                                            </div>
+                                                            <div class="footer pt-3 pb-3">
+                                                                <a href="#" class="btn text-primary font-weight-bold" data-toggle="collapse" data-target="#ShowapplyDiv">Apply now</a>
+                                                                <ul class="list-inline float-right m-0">
+                                                                    <li class="list-inline-item"><a href="#"><i class="fa fa-star fa-lg"></i></a></li>
+                                                                    <li class="list-inline-item"><a href="#"><i class="fa fa-share-alt fa-lg"></i></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- End advert detail modal section -->
+
+                </div>
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center mt-4 mb-5">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true"><i class="fa fa-caret-left" aria-hidden="true"></i></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true"><i class="fa fa-caret-right" aria-hidden="true"></i></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <section class="bg-dark text-white why-should-section">
+            <div class="container">
+                <h2 class="why-should-heading mb-5 font-weight-bold">Why Should you Advertise With us?</h2>
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                        <div class="content-div">
+                            <div class="icon-div text-center">
+
+                                <img src="img/card-red-icon.svg" class="img-responsive">
+                            </div>
+                            <div class="content-heading-div text-center mb-4">
+                                <h3>Lorem ipsum dolor sit amet,</h3>    
+                            </div>
+                            <div class="content-body mb-5">
+                                <p class="text-white font-weight-light font-weight-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis</p>
+                                <p class="text-white font-weight-light font-weight-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                        <div class="content-div">
+                            <div class="icon-div text-center">
+
+                                <img src="img/thumb-red-icon.svg" class="img-responsive">
+                            </div>
+                            <div class="content-heading-div text-center  mb-4">
+                                <h3>Lorem ipsum dolor sit amet,</h3>    
+                            </div>
+                            <div class="content-body mb-5">
+                                <p class="text-white font-weight-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis</p>
+                                <p class="text-white font-weight-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                        <div class="content-div">
+                            <div class="icon-div text-center">
+
+                                <img src="img/terget-red-icon.svg" class="img-responsive">
+                            </div>
+                            <div class="content-heading-div text-center  mb-4">
+                                <h3>Lorem ipsum dolor sit amet,</h3>    
+                            </div>
+                            <div class="content-body mb-5">
+                                <p class="text-white font-weight-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis</p>
+                                <p class="text-white font-weight-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 text-center offset-xl-4 offset-lg-4 offset-md-4">
+                        <button class="btn btn-primary btn-block rounded-top rounded-bottom btn-shadow pt-2 pb-2" data-toggle="modal" data-target="#signupModal">Create your free account now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="white-divider"></section>
+
+        <!-- start signup modal section -->
+
+        <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-body p-0">
+                        <div class="row no-gutters">
+                            <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 bg-dark text-white">
+                                <div class="signup-left-side p-3">
+                                    <div class="modal-upload-div w-50 m-auto pt-5 pb-5">
+                                        <label class="upload-div text-center">
+                                            <input type="file" required/>
+                                            <span class="d-block mb-1">
+                                                <i class="fa fa-plus-square fa-lg"></i>
+                                            </span>
+                                            <span class="d-inline-block font-size-small" style="color:#B1B1B1;">Your Profile picture</span>
+                                        </label>
+                                    </div>
+                                    <h3 class="model-h3 font-weight-bold mb-4 mt-4">Welcome To The Barber Portal</h3>
+                                    <p class="mb-5 font-weight-light text-white font-size-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <p class="text-white font-size-small pb-4 border-bottom">For more information plase see our <a href="#" class="text-primary font-weight-light">Terms & Conditions</a></p>
+                                </div>
+                            </div>
+                            <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12">
+                                <div class="signup-right-side p-4">
+                                    <ul class="list-inline modal-custom-mb">
+                                        <li class="list-inline-item">
+                                            <a href="#" class="btn modal-link-btn active">Create a barber account</a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#" class="btn modal-link-btn">Create a barber shop account</a>
+                                        </li>
+                                    </ul>
+                                    <h2 class="font-weight-normal modal-h2">Your info</h2>
+                                    <h2 class="font-weight-normal modal-sub-h2">Fill the form to signup</h2>
+                                    <form class="modal-from">
+                                        <div class="form-group mb-2">
+                                            <input type="text" class="form-control modal-form-control" placeholder="business name">
+                                        </div>
+                                        <div class="form-group mb-2">
+                                            <input type="text" class="form-control modal-form-control" placeholder="phone number">
+                                        </div>
+                                        <div class="form-group mb-2">
+                                            <input type="email" class="form-control modal-form-control" placeholder="e-mail">
+                                        </div>
+                                        <div class="form-group mb-2">
+                                            <input type="text" class="form-control modal-form-control" placeholder="owner/manager name">
+                                        </div>
+                                        <div class="form-group mb-2">
+                                            <input type="password" class="form-control modal-form-control" placeholder="password">
+                                        </div>
+                                        <div class="form-group mb-5">
+                                            <input type="password" class="form-control modal-form-control" placeholder="confirm password">
+                                        </div>
+                                        <div class="form-group mb-2">
+                                            <button type="submit" class="btn bg-dark modal-link-btn text-white">create my account</button>
+                                        </div>
+                                    </form>
+                                    <p class="font-weight-bold font-size-small">by slecting "Create my accout" you also agree to our 
+                                        <a href="#" class="text-primary">Terms & Conditions,</a>
+                                        <a href="#" class="text-primary">Terms of use</a> and 
+                                        <a href="#" class="text-primary">Privacy Policy</a>  
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- end signup modal section -->  
+    </main>
+    <footer class="bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-4 col-xs-12">
+                    <div class="footer-logo text-xs-center">
+                        <a href="#">
+                            <img src="img/logo-footer.svg" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-8 col-xs-12">
+                    <p class="mb-0 mt-3 text-right text-xs-center">Copyright 2017 The Barber Portal.All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>
